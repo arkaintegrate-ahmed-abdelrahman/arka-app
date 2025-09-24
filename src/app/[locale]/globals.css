@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,regular,500,600,700,800,900');
+@import url(https://fonts.googleapis.com/css?family=Tajawal:200,300,regular,500,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Amiri+Quran:regular);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1440px !important;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+ }
+
+@media (max-width : 700px) {
+	.container{
+		padding: 0 15px !important;
+	}
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.cairo * {
+  font-family: var(--font-tajawal) !important;
+}
+[dir='rtl'] body {
+  font-family: var(--font-alexandria) !important;
+}
+
+[dir='ltr'] body {
+  font-family: var(--font-inter), sans-serif !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  transition: 0.3s;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* styles/globals.css */
+.scroll-container {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
+/*  Scroll  */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.scroll ::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4451a3;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+#_rht_toaster {
+  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
+}
+
+.path-shape {
+  clip-path: path('M0 0 H25 V25 A25 25 0 0 0 0 0 Z');
+}
+
+
+.path-15 {
+  clip-path: path('M0 0 H15 V15 A15 15 0 0 0 0 0 Z');
+}
+.path-7 {
+  clip-path: path('M0 0 H7 V7 A7 7 0 0 0 0 0 Z');
+}
+
+
+.path-shape-tl {
+  clip-path: path('M0 0 H25 V25 A25 25 0 0 0 0 0 Z');
+  transform: translate(-25px, 0);  
+}
+
+ 
